@@ -204,7 +204,7 @@ const LandingPage = () => {
         <p className="footer-text">
           © 2020 Zeedas, Ltd. All rights reserved <br />
           <br /> © 2020 Zeedas, Ltd. All rights reserved All text, graphics, audio files, code, downloadable material, and other works on this web
-          site are the copyrighted works of TeamApt, Inc. All Rights Reserved. Any unauthorized redistribution or reproduction of any copyrighted
+          site are the copyrighted works of Zeedas, Inc. All Rights Reserved. Any unauthorized redistribution or reproduction of any copyrighted
           materials on this web site is strictly prohibited. Other product and company names are trademarks of their respective owners. This web site
           contains simulated images; actual appearance may vary.
         </p>
