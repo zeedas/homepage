@@ -1,31 +1,37 @@
 .body {
   background-size: cover;
-  &.light {
-  }
-  &.dark {
+//   &.light {
+//   }
+//   &.dark {
+//     background-color: rgba(10, 28, 43, 1);
+//     background-image: linear-gradient(
+//       90deg,
+//       rgba(10, 28, 43, 1) 0%,
+//       rgba(10, 28, 43, 1) 19%,
+//       rgba(255, 255, 255, 0.08) 19%,
+//       rgba(255, 255, 255, 0.08) 20%,
+//       rgba(10, 28, 43, 1) 20%,
+//       rgba(10, 28, 43, 1) 39%,
+//       rgba(255, 255, 255, 0.08) 39%,
+//       rgba(255, 255, 255, 0.08) 40%,
+//       rgba(10, 28, 43, 1) 40%,
+//       rgba(10, 28, 43, 1) 59%,
+//       rgba(255, 255, 255, 0.08) 59%,
+//       rgba(255, 255, 255, 0.08) 60%,
+//       rgba(10, 28, 43, 1) 60%,
+//       rgba(10, 28, 43, 1) 79%,
+//       rgba(255, 255, 255, 0.08) 79%,
+//       rgba(255, 255, 255, 0.08) 80%,
+//       rgba(10, 28, 43, 1) 80%,
+//       rgba(10, 28, 43, 1) 100%
+//     );
+//   }
+}
+
+.bg {
+    background-size: cover;
+    background-image: url("../../assets//images/Group\ 3.png");
     background-color: rgba(10, 28, 43, 1);
-    background-image: linear-gradient(
-      90deg,
-      rgba(10, 28, 43, 1) 0%,
-      rgba(10, 28, 43, 1) 19%,
-      rgba(255, 255, 255, 0.08) 19%,
-      rgba(255, 255, 255, 0.08) 20%,
-      rgba(10, 28, 43, 1) 20%,
-      rgba(10, 28, 43, 1) 39%,
-      rgba(255, 255, 255, 0.08) 39%,
-      rgba(255, 255, 255, 0.08) 40%,
-      rgba(10, 28, 43, 1) 40%,
-      rgba(10, 28, 43, 1) 59%,
-      rgba(255, 255, 255, 0.08) 59%,
-      rgba(255, 255, 255, 0.08) 60%,
-      rgba(10, 28, 43, 1) 60%,
-      rgba(10, 28, 43, 1) 79%,
-      rgba(255, 255, 255, 0.08) 79%,
-      rgba(255, 255, 255, 0.08) 80%,
-      rgba(10, 28, 43, 1) 80%,
-      rgba(10, 28, 43, 1) 100%
-    );
-  }
 }
 
 header {
@@ -67,134 +73,136 @@ header {
     }
   }
 }
-section.jumbotron {
-  text-align: center;
-  padding-top: 172px;
-  div {
-    text-align: center;
-    max-width: 860px;
-    margin: 0 auto;
-    margin-bottom: 56px;
-    h4 {
-      font-family: "Futura";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 68px;
-      &.dark {
-        color: #f9f9f9;
+
+section.main1 {
+    .section1 {
+        text-align: center;
+        padding-top: 172px;
+        div {
+          text-align: center;
+          max-width: 860px;
+          margin: 0 auto;
+          margin-bottom: 56px;
+          h4 {
+            font-family: "Futura";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 68px;
+            &.dark {
+              color: #f9f9f9;
+            }
+            &.light {
+            }
+          }
+          p {
+            font-size: 20px;
+            font-weight: 600px;
+            max-width: 550px;
+            margin: 0 auto;
+            &.dark {
+              color: rgba(249, 249, 249, 0.8);
+            }
+            &.light {
+            }
+          }
+        }
+        .get-started {
+          text-decoration: none;
+          div {
+            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(249, 249, 249, 0.8);
+            padding: 0 40px;
+            background: rgba(35, 179, 232, 1);
+            border-radius: 4px;
+            margin-bottom: 80px;
+          }
+        }
       }
-      &.light {
+    .section2 {
+        text-align: center;
+        margin-bottom: 280px;
+        img {
+          max-width: 1140px;
+          margin: 0 auto;
+          margin-bottom: 160px;
+        }
+        div {
+          .main-percentage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Futura";
+            font-weight: 700;
+            font-size: 96px;
+            margin: 0 auto;
+            border-radius: 99999px;
+            width: 400px;
+            height: 400px;
+            background: #f4b740;
+            box-shadow: 0px 0px 0px 70px rgba(244, 183, 64, 0.12), 0px 0px 0px 30px rgba(244, 183, 64, 0.2);
+            margin-bottom: 120px;
+            &.dark {
+              color: #f9f9f9;
+            }
+            &.light {
+            }
+          }
+          p {
+            font-family: "Futura";
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 66px;
+            max-width: 840px;
+            margin: 0 auto;
+            &.dark {
+              color: #f9f9f9;
+            }
+            &.light {
+            }
+          }
+        }
       }
-    }
-    p {
-      font-size: 20px;
-      font-weight: 600px;
-      max-width: 550px;
-      margin: 0 auto;
-      &.dark {
-        color: rgba(249, 249, 249, 0.8);
+    .section3 {
+        max-width: 1140px;
+        margin-bottom: 160px;
+        margin: 0 auto;
+        padding-bottom: 160px;
+        p {
+          font-family: "Futura";
+          font-weight: 700;
+          font-size: 58px;
+          margin-bottom: 40px;
+          &.dark {
+            color: #f9f9f9;
+          }
+          &.light {
+          }
+        }
+        div {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: end;
+          gap: 160px;
+          p {
+            font-family: "Nunito Sans";
+            font-weight: 700;
+            font-size: 32px;
+            padding-bottom: 40px;
+            border-bottom: 4px solid rgba(249, 249, 249, 0.1);
+            margin: 0;
+          }
+          img {
+            height: 300px;
+          }
+        }
       }
-      &.light {
-      }
-    }
-  }
-  .get-started {
-    text-decoration: none;
-    div {
-      height: 48px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(249, 249, 249, 0.8);
-      padding: 0 40px;
-      background: rgba(35, 179, 232, 1);
-      border-radius: 4px;
-      margin-bottom: 80px;
-    }
-  }
 }
 
-section.main {
-  text-align: center;
-  margin-bottom: 280px;
-  img {
-    max-width: 1140px;
-    margin: 0 auto;
-    margin-bottom: 160px;
-  }
-  div {
-    .main-percentage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Futura";
-      font-weight: 700;
-      font-size: 96px;
-      margin: 0 auto;
-      border-radius: 99999px;
-      width: 400px;
-      height: 400px;
-      background: #f4b740;
-      box-shadow: 0px 0px 0px 70px rgba(244, 183, 64, 0.12), 0px 0px 0px 30px rgba(244, 183, 64, 0.2);
-      margin-bottom: 120px;
-      &.dark {
-        color: #f9f9f9;
-      }
-      &.light {
-      }
-    }
-    p {
-      font-family: "Futura";
-      font-weight: 700;
-      font-size: 58px;
-      line-height: 66px;
-      max-width: 840px;
-      margin: 0 auto;
-      &.dark {
-        color: #f9f9f9;
-      }
-      &.light {
-      }
-    }
-  }
-}
 
 section.main2 {
-  max-width: 1140px;
-  margin-bottom: 160px;
-  margin: 0 auto;
-  padding-bottom: 160px;
-  p {
-    font-family: "Futura";
-    font-weight: 700;
-    font-size: 58px;
-    margin-bottom: 40px;
-    &.dark {
-      color: #f9f9f9;
-    }
-    &.light {
-    }
-  }
-  div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
-    gap: 160px;
-    p {
-      font-family: "Nunito Sans";
-      font-weight: 700;
-      font-size: 32px;
-      padding-bottom: 40px;
-      border-bottom: 4px solid rgba(249, 249, 249, 0.1);
-      margin: 0;
-    }
-    img {
-      height: 300px;
-    }
-  }
-}
-
-section.main3 {
   background-color: #fffde6;
   .section1 {
     padding: 160px 0;
@@ -368,7 +376,7 @@ section.main3 {
   }
 }
 
-section.main4 {
+section.main3 {
   background: #ffffff;
   .section1 {
     padding: 60px 0;

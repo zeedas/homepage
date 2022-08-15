@@ -15,43 +15,47 @@ const LandingPage = () => {
   const [mode, setMode] = useState("dark");
   return (
     <div className={`body ${mode} `}>
-      <header className="">
-        <div className="header-main">
-          <img src={Logo} alt="" className="logo" />
-          <div className="">
-            <Link to="#" className="contact-us">
-              <p className="">Contact Us</p>{" "}
-            </Link>
+      <div className="bg">
+        <header className="">
+          <div className="header-main">
+            <img src={Logo} alt="" className="logo" />
+            <div className="">
+              <Link to="#" className="contact-us">
+                <p className="">Contact Us</p>{" "}
+              </Link>
+              <Link to="#" className="get-started">
+                <div className="">Get started</div>
+              </Link>
+            </div>
+          </div>
+        </header>
+        <section className="main1">
+          <section className="section1">
+            <div className="">
+              <h4 className={`${mode}`}>Data Insight for Engineering Excellence.</h4>
+              <p className={`${mode}`}>We are enabling a culture of continuous improvement for engineering teams.</p>
+            </div>
             <Link to="#" className="get-started">
               <div className="">Get started</div>
             </Link>
-          </div>
-        </div>
-      </header>
-      <section className=" jumbotron">
-        <div className="">
-          <h4 className={`${mode}`}>Data Insight for Engineering Excellence.</h4>
-          <p className={`${mode}`}>We are enabling a culture of continuous improvement for engineering teams.</p>
-        </div>
-        <Link to="#" className="get-started">
-          <div className="">Get started</div>
-        </Link>
-      </section>
-      <section className="main">
-        <img src={SafariImg} alt="" className="" />
-        <div className="">
-          <div className={`main-percentage ${mode}`}>35%</div>
-          <p className={`${mode}`}>Of engineering productivity is lost due to Inefficiency</p>
-        </div>
-      </section>
+          </section>
+          <section className="section2">
+            <img src={SafariImg} alt="" className="" />
+            <div className="">
+              <div className={`main-percentage ${mode}`}>35%</div>
+              <p className={`${mode}`}>Of engineering productivity is lost due to Inefficiency</p>
+            </div>
+          </section>
+          <section className="section3">
+            <p className={`${mode}`}>Zeedas provides the data insight your team needs to make this a thing of the past</p>
+            <div className="">
+              <p className={`${mode}`}>Understand how you perform at every stage of your software delivery and surface issues faster. </p>
+              <img src={PeopleImg} alt="" className="" />
+            </div>
+          </section>
+        </section>
+      </div>
       <section className="main2">
-        <p className={`${mode}`}>Zeedas provides the data insight your team needs to make this a thing of the past</p>
-        <div className="">
-          <p className={`${mode}`}>Understand how you perform at every stage of your software delivery and surface issues faster. </p>
-          <img src={PeopleImg} alt="" className="" />
-        </div>
-      </section>
-      <section className="main3">
         <div className="section1">
           <p className="">
             Bad codes take <span className="percentage">30%</span> of teams' productivity weekly.{" "}
@@ -98,7 +102,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="main4">
+      <section className="main3">
         <div className="section1">
           <p className="text1">Stand-ups are boring and repetitive, lacking any real insight</p>
           <img src={MainImg5} alt="" />
