@@ -91,7 +91,6 @@ const LandingPage = () => {
             {" "}
             <span className="percentage">83%</span> of engineers experience burnout regularly, costing teams valuable time
           </p>
-          \
           <div className="grid">
             <div className="div1">
               <p className="">Identify signs and trends that lead to burnout and prevent them. </p>
