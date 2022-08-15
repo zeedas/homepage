@@ -12,7 +12,7 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title> {pageTitle} | FeedVote </title>
+        <title> {pageTitle} | Zeedas </title>
       </Helmet>
       <BrowserRouter>
         <IndexRoutes />

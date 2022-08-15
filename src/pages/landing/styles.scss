@@ -1,0 +1,551 @@
+.body {
+  background-size: cover;
+  &.light {
+  }
+  &.dark {
+    background-color: rgba(10, 28, 43, 1);
+    background-image: linear-gradient(
+      90deg,
+      rgba(10, 28, 43, 1) 0%,
+      rgba(10, 28, 43, 1) 19%,
+      rgba(255, 255, 255, 0.08) 19%,
+      rgba(255, 255, 255, 0.08) 20%,
+      rgba(10, 28, 43, 1) 20%,
+      rgba(10, 28, 43, 1) 39%,
+      rgba(255, 255, 255, 0.08) 39%,
+      rgba(255, 255, 255, 0.08) 40%,
+      rgba(10, 28, 43, 1) 40%,
+      rgba(10, 28, 43, 1) 59%,
+      rgba(255, 255, 255, 0.08) 59%,
+      rgba(255, 255, 255, 0.08) 60%,
+      rgba(10, 28, 43, 1) 60%,
+      rgba(10, 28, 43, 1) 79%,
+      rgba(255, 255, 255, 0.08) 79%,
+      rgba(255, 255, 255, 0.08) 80%,
+      rgba(10, 28, 43, 1) 80%,
+      rgba(10, 28, 43, 1) 100%
+    );
+  }
+}
+
+header {
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 16px;
+    img {
+      max-height: 28px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .contact-us {
+        text-decoration: none;
+        p {
+          color: rgba(249, 249, 249, 0.8);
+          font-size: 20px;
+          font-weight: 600px;
+        }
+      }
+      .get-started {
+        text-decoration: none;
+        div {
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgba(249, 249, 249, 0.8);
+          padding: 0 40px;
+          background: rgba(35, 179, 232, 1);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+section.jumbotron {
+  text-align: center;
+  padding-top: 172px;
+  div {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    h4 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 68px;
+      &.dark {
+        color: #f9f9f9;
+      }
+      &.light {
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 600px;
+      max-width: 550px;
+      margin: 0 auto;
+      &.dark {
+        color: rgba(249, 249, 249, 0.8);
+      }
+      &.light {
+      }
+    }
+  }
+  .get-started {
+    text-decoration: none;
+    div {
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(249, 249, 249, 0.8);
+      padding: 0 40px;
+      background: rgba(35, 179, 232, 1);
+      border-radius: 4px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+section.main {
+  text-align: center;
+  margin-bottom: 280px;
+  img {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+  }
+  div {
+    .main-percentage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Futura";
+      font-weight: 700;
+      font-size: 96px;
+      margin: 0 auto;
+      border-radius: 99999px;
+      width: 400px;
+      height: 400px;
+      background: #f4b740;
+      box-shadow: 0px 0px 0px 70px rgba(244, 183, 64, 0.12), 0px 0px 0px 30px rgba(244, 183, 64, 0.2);
+      margin-bottom: 120px;
+      &.dark {
+        color: #f9f9f9;
+      }
+      &.light {
+      }
+    }
+    p {
+      font-family: "Futura";
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 66px;
+      max-width: 840px;
+      margin: 0 auto;
+      &.dark {
+        color: #f9f9f9;
+      }
+      &.light {
+      }
+    }
+  }
+}
+
+section.main2 {
+  max-width: 1140px;
+  margin-bottom: 160px;
+  margin: 0 auto;
+  padding-bottom: 160px;
+  p {
+    font-family: "Futura";
+    font-weight: 700;
+    font-size: 58px;
+    margin-bottom: 40px;
+    &.dark {
+      color: #f9f9f9;
+    }
+    &.light {
+    }
+  }
+  div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    gap: 160px;
+    p {
+      font-family: "Nunito Sans";
+      font-weight: 700;
+      font-size: 32px;
+      padding-bottom: 40px;
+      border-bottom: 4px solid rgba(249, 249, 249, 0.1);
+      margin: 0;
+    }
+    img {
+      height: 300px;
+    }
+  }
+}
+
+section.main3 {
+  background-color: #fffde6;
+  .section1 {
+    padding: 160px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    p {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 66px;
+      margin-bottom: 48px;
+      .percentage {
+        color: rgba(241, 88, 50, 1);
+        font-family: "Futura";
+      }
+      .p2 {
+        color: rgba(30, 31, 32, 0.3);
+        font-family: "Futura";
+      }
+    }
+    div {
+      border-radius: 20px;
+      max-height: 548px;
+      padding: 32px;
+      background-color: #fff88b;
+      max-width: max-content;
+    }
+  }
+  .section2 {
+    padding: 160px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    p {
+      text-align: right;
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 66px;
+      margin-bottom: 48px;
+      .percentage {
+        color: rgba(241, 88, 50, 1);
+        font-family: "Futura";
+      }
+      .p2 {
+        color: rgba(30, 31, 32, 0.3);
+        font-family: "Futura";
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      .div1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+          max-width: 440px;
+          margin-bottom: 120px;
+        }
+        p {
+          text-align: left;
+          font-family: "Nunito Sans";
+          color: #9a9a9b;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          padding-bottom: 40px;
+          border-bottom: 4px solid rgba(30, 31, 32, 0.1);
+          margin: 0;
+        }
+      }
+      .div2 {
+        background: linear-gradient(0deg, #fff88b, #fff88b), url(.png), #f4ce9b;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 382px;
+        }
+      }
+    }
+  }
+  .section3 {
+    padding: 160px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    div {
+      margin-bottom: 102px;
+      .text1 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 66px;
+        color: #03293d;
+        margin-bottom: 40px;
+      }
+      .text2 {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: rgba(30, 31, 32, 0.3);
+      }
+    }
+    .img-div {
+      margin: 0;
+      height: 500px;
+      background: #fff88b;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 628px;
+      }
+    }
+  }
+  .section4 {
+    padding: 160px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    p {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 68px;
+      line-height: 76px;
+      color: #03293d;
+      margin-bottom: 72px;
+      .percentage {
+        color: #f15832;
+        font-family: "Futura";
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      align-items: center;
+      .div1 {
+        p {
+          font-family: "Futura";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 56px;
+          color: rgba(30, 31, 32, 0.3);
+          margin: 0;
+        }
+      }
+      .div2 {
+        background: rgba(255, 248, 139, 1);
+        border-radius: 20px;
+        height: 400px;
+        position: relative;
+        img {
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 480px;
+        }
+      }
+    }
+  }
+}
+
+section.main4 {
+  background: #ffffff;
+  .section1 {
+    padding: 60px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    p.text1 {
+      font-family: "Futura";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 66px;
+      text-align: center;
+      color: #03293d;
+      margin-bottom: 40px;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+    p.text2 {
+      margin: 0 auto;
+      max-width: 620px;
+      text-align: left;
+      font-family: "Nunito Sans";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: #9a9a9b;
+    }
+  }
+  .section2 {
+    padding: 160px 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    div {
+      height: 472px;
+      background-size: cover;
+      border-radius: 20px;
+      background-image: url("../../assets/images/group45.svg");
+      display: flex;
+      padding: 0 80px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      p {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 66px;
+        color: rgba(249, 249, 249, 1);
+        margin-bottom: 40px;
+        .percentage {
+          font-family: "Futura";
+          color: rgba(241, 88, 50, 1);
+        }
+      }
+      .get-started {
+        text-decoration: none;
+        div {
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgba(249, 249, 249, 0.8);
+          padding: 0 40px;
+          background: rgba(35, 179, 232, 1);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #ffffff;
+  padding: 160px 0 80px 0;
+  .footer-grid {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 72px;
+    .div1 {
+    }
+    .div2,
+    .div3 {
+      p {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #03293d;
+        margin-bottom: 16px;
+      }
+      ol {
+        list-style: none;
+        li {
+          font-family: "Nunito Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          color: #03293d;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .div4 {
+      p {
+        font-family: "Futura";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #03293d;
+        margin-bottom: 16px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      .extra {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 161%;
+        color: #03293d;
+        opacity: 0.6;
+        margin-bottom: 16px;
+        max-width: 188px;
+        &::placeholder {
+          font-family: "Nunito Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          color: #1e1f20;
+          opacity: 0.3;
+        }
+      }
+      .input-div {
+        position: relative;
+        input {
+          width: 100%;
+          height: 38px;
+          border-radius: 9999px;
+          border: 1px solid #000000;
+          padding-left: 16px;
+          padding-right: 40px;
+        }
+        svg {
+          position: absolute;
+          right: 4px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .footer-text {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #03293d;
+    opacity: 0.3;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+}
