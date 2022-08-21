@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/Group 18.png";
 import SafariImg from "../../assets/images/Safari.png";
@@ -10,9 +10,31 @@ import MainImg3 from "../../assets/images/Frame 1000002876.png";
 import MainImg4 from "../../assets/images/Component 2.png";
 import MainImg5 from "../../assets/images/group39.svg";
 import "./styles.scss";
+import gsap from "gsap";
 
 const LandingPage = () => {
   const [mode, setMode] = useState("dark");
+  const firstSectionRef = useRef<HTMLDivElement>(null);
+  const secondSectionRef = useRef<HTMLDivElement>(null);
+  const tl = useRef<any>(null);
+
+  useEffect(() => {
+    // tl.current = gsap.fromTo(firstSectionRef.current, { opacity: 0, y: 500 }, { opacity: 1, duration: 5, y: 0 });
+    // gsap.fromTo(
+    //   secondSectionRef.current,
+    //   { opacity: 0, x: -500 },
+    //   {
+    //     scrollTrigger: {
+    //       trigger: secondSectionRef.current,
+    //       pin: true, // pin the trigger element while active
+    //       start: "top top",
+    //     },
+    //     opacity: 1,
+    //     x: 0,
+    //     duration: 3,
+    //   }
+    // );
+  }, []);
   return (
     <div className={`body ${mode} `}>
       <div className="bg">
@@ -30,7 +52,7 @@ const LandingPage = () => {
           </div>
         </header>
         <section className="main1">
-          <section className="section1">
+          <section ref={firstSectionRef} className="section1">
             <div className="">
               <h4 className={`${mode}`}>Data Insight for Engineering Excellence.</h4>
               <p className={`${mode}`}>We are enabling a culture of continuous improvement for engineering teams.</p>
@@ -39,7 +61,7 @@ const LandingPage = () => {
               <div className="">Get started</div>
             </Link>
           </section>
-          <section className="section2">
+          <section ref={secondSectionRef} className="section2">
             <img src={SafariImg} alt="" className="" />
             <div className="">
               <div className={`main-percentage ${mode}`}>35%</div>
