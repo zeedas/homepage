@@ -46,11 +46,8 @@ const LandingPage = () => {
               <Link to="#" className="contact-us">
                 <p className="">Contact Us</p>{" "}
               </Link>
-              <Link to="#" className="get-started">
-                <div className="">Get started</div>
-              </Link>
             </div>
-            <div className="mobile-menu">
+            {/* <div className="mobile-menu">
               <svg
                 role={"button"}
                 onClick={() => setMenuOpen(true)}
@@ -108,7 +105,7 @@ const LandingPage = () => {
                   </Link>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </header>
         <section className="main1">
