@@ -114,9 +114,9 @@ const LandingPage = () => {
               <h4 className={`${mode}`}>Data Insight for Engineering Excellence.</h4>
               <p className={`${mode}`}>We are enabling a culture of continuous improvement for engineering teams.</p>
             </div>
-            <Link to="#" className="get-started">
+            <a href="https://app.zeedas.com" target="_blank" className="get-started">
               <div className="">Get started</div>
-            </Link>
+            </a>
           </section>
           <section ref={secondSectionRef} className="section2">
             <img src={SafariImg} alt="" className="" />
@@ -191,9 +191,9 @@ const LandingPage = () => {
             <p className="">
               <span className="percentage">60+</span> analysis to make you a better engineering manager
             </p>
-            <Link to="#" className="get-started">
+            <a href="https://app.zeedas.com" target="_blank" className="get-started">
               <div className="">Get started</div>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
