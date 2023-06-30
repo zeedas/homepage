@@ -1,10 +1,30 @@
 steps:
-- name: node:14.17.0
-  entrypoint: npm
-  args: ["install"]
-- name: node:14.17.0
-  entrypoint: npm
-  args: ["run", "build"]
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+  # Install Node.js and npm
+  - name: 'node:14.17.0'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        apt-get update && apt-get install -y curl
+        curl -sL https://deb.nodesource.com/setup_14.x | bash -
+        apt-get install -y nodejs
+
+  # Install project dependencies
+  - name: 'node:14.17.0'
+    entrypoint: 'npm'
+    args: ['ci']
+
+  # Build the TypeScript project
+  - name: 'node:14.17.0'
+    entrypoint: 'npm'
+    args: ['run', 'build']
+
+  # Deploy the built project to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+
+# Optionally specify the timeout and resource limits
+timeout: '1600s'
+resources:
+  limits:
+    memory: '2GB'
