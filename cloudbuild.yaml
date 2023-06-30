@@ -23,8 +23,5 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['app', 'deploy']
 
-# Optionally specify the timeout and resource limits
+# Optionally specify the timeout
 timeout: '1600s'
-resources:
-  limits:
-    memory: '2GB'
