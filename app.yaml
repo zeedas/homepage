@@ -1,0 +1,2 @@
+service: homepage
+runtime: nodejs
