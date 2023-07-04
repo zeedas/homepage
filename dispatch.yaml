@@ -1,0 +1,6 @@
+dispatch:
+  - url: "zeedas.com/*"
+    service: homepage
+
+  - url: "www.zeedas.com/*"
+    service: homepage
