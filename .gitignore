@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# GAE Config Files
+app.yaml
+cloudbuild.yaml
