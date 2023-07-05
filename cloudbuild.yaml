@@ -1,7 +1,4 @@
-steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['app', 'deploy', 'dispatch.yaml']
-    
+steps:    
   # Install Node.js and npm
   - name: 'ubuntu'
     entrypoint: 'bash'
